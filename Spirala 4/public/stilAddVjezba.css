@@ -1,0 +1,101 @@
+#fPostojeca{
+    margin: 0 auto;
+    background-color: #d6d5d5; 
+    height: 31%;
+    width: 80%;
+    box-shadow: 1px 1px grey;
+
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: -58%; left: 0; bottom: 0; right: 0;    
+}
+
+#fPoveziZadatak{
+    margin: 0 auto;
+    background-color: #d6d5d5; 
+    height: 15%;
+    width: 80%;
+    box-shadow: 1px 1px grey;
+
+    text-align: center;
+    padding-top:1%;
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: 80%; left: 0; bottom: 0; right: 0; 
+}
+.prva{
+    font-size: 108%;
+    margin-left: 20%;
+    margin-top:1%;
+}
+.druga{
+    margin-left: 20%;
+    font-size: 101%;
+}
+select,input,button{
+    width:40%;
+    margin-bottom: 1%;
+}
+input[type="checkbox"]{
+    width:auto;
+}
+button[type="submit"]{
+    float:right;
+    margin-right:10%;
+}
+
+input[type="submit"]{
+    float:right;
+    margin-right:8%;
+    width:33%;
+}
+#fNova ul {
+    list-style-type: none;
+    width: 40%;
+    background-color: white; 
+    border: 1px solid black;
+}
+#fNova li{
+    margin-left:-10%;
+}
+#fNova{
+    margin: 0 auto;
+    background-color: #d6d5d5; 
+    height: 40%;
+    width: 80%;
+    box-shadow: 1px 1px grey; 
+    
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: 20%; left: 0; bottom: 0; right: 0;
+      
+} 
+#glavniSadrzaj {
+    height: 130%;
+    clear:left;
+    background-color: #e5e5e5; 
+    margin: auto;
+    position: relative;
+}
+
+#ispis, #ispis2{
+    color:red;
+    font-size: 90%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+    #glavniSadrzaj {
+        width:85%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    #glavniSadrzaj {
+        width:100%;
+    }
+}

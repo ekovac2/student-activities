@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>Add vjezba</TITLE>
+		<link rel="stylesheet" type="text/css" href="stilAddVjezba.css">
+		<link rel="stylesheet" type="text/css" href="headerIfooter.css">
+		<script src="validacija.js" type="text/javascript"></script>
+		<script src="addVjezba.js" type="text/javascript"></script>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</HEAD>
+
+<BODY onload="return pozovi();">
+	<div id="header">
+		<div id="logo">
+			<img src="slikica.png" alt="slika">
+		</div>
+
+		<div id="naziv">
+			Dodavanje vježbe/spirale
+		</div>
+
+        
+		<div id="meni">
+			<ul>
+				<li><a href="zadaci.html">Pregled godina</a></li>
+				<li><a href="addGodina.html">Dodavanje godine</a></li>
+				<li><a href="studenti.html">Pregled studenata</a></li>
+				<li><a href="commiti.html">Pregled commita</a></li>
+				<li><a href="addZadatak.html">Dodavanje zadataka</a></li>
+				<li><a href="addVjezba.html">Pregled vježbe/spirale</a></li>
+				<li><a href="addStudent.html">Dodavanje studenata</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="glavniSadrzaj" >
+		<form name="fPostojeca" id="fPostojeca" action="/addVjezba" method="post">
+			<div class="prva">Dodavanje postojeće vježbe/spirale</div><br>
+			<div class="druga">Godina<br>
+			<select name="sGodine" id="sGodine">
+			</select><br>
+			Vježbe/Spirale<br>
+			<select name="sVjezbe" id="sVjezbe">
+			</select><br>
+			<button type="submit" name="submit">Dodaj</button>
+
+			<div id="ispis"> </div>
+
+		</div>
+		</form>
+
+		<form name="fNova" id="fNova" action="/addVjezba" method="post">
+				<div class="prva">Nova vježba/spirala</div><br>
+				<div class="druga">
+				Naziv vježbe<br>
+				<input type="text" name="naziv" id="VjezbaX" ><br>
+				Godina<br>
+				<select name="sGodine" id="sGodine2">
+				</select><br>
+				
+				
+						<ul>
+								<li>Zadatak 1</li>
+								<li>Zadatak 2</li>
+								<li>Zadatak 3</li>
+						</ul>
+
+				<select name="sZadatak" id="sZadatak">
+				</select>
+				<button type="button" name="dZadatak">Dodaj zadatak</button><br>
+				<input type="checkbox" name="spirala">Spirala
+				<button type="submit" name="submit">Dodaj</button>
+				<div id="ispis2"> </div>
+			</div>
+
+			 
+			</form>
+
+			<form name="fPoveziZadatak" id="fPoveziZadatak" action="#" onsubmit="return napraviPost();">
+				Poveži zadatak<br><br>
+				Vježba: 
+				<select name="sVjezbe" id="vjezbe" onchange="return zadaciNaIndeks();">
+				</select><br>
+				Zadatak: 
+				<select name="sZadatak" id="zadaci">
+				</select><br>
+				<input type="submit" name="dZadatak" value="Dodaj">
+			</form>
+
+
+	</div>
+
+
+	<div id="footer">
+	Web tehnologije 2018/19
+	</div>
+	<script>
+		function pozovi(){
+			var novi = new ucitajVjezbe();
+			var drugi = new funkcijaOnLoad();
+			var vj = ucitajVjezbeSve();
+			var gd = ucitajGodineSve("sGodine");
+			var gd1 = ucitajGodineSve("sGodine2");
+		}
+	</script>
+
+</BODY>
+</HTML>

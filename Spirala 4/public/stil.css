@@ -1,0 +1,28 @@
+#commiti a{
+    color:  rgba(67, 103, 182, 0.993);
+}
+tr :nth-child(1){
+    width: 17%;  
+}
+table, tr, td {
+    border: 1px solid black;
+}
+tr, td {
+    padding-left: 1%;
+}
+#prvi {
+    background-color: #a7beff;
+}
+table {
+    height:50%;
+    width:40%;
+    font-size: 85%;
+    margin-top: 2%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+html, body{
+    height:100%;
+    width:100%;
+}

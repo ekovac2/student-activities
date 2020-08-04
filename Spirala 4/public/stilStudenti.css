@@ -1,0 +1,82 @@
+﻿#side li{
+	margin-left: -2em;
+}
+#side ul {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+	overflow-y:scroll;
+	background-color: white;
+	list-style-type: none;
+	height: 70%;
+	border: 1px solid black;
+}
+#side li:hover {
+	background-color: rgba(212, 212, 212, 0.993);
+}
+table { 
+	height: 60%;
+	width:87%;
+	font-size: 120%;
+	border-collapse: collapse;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+  	top: 15%; left: 0;  bottom: 15%; right: 0;
+}
+table, tr, td {
+	border: 1px solid black;
+}
+tr :nth-child(2){
+	width: 40%;	
+}
+tr :nth-child(1){ 
+	width: 12%;
+}
+tr, td{
+	padding-left:1%;
+}
+#prvi {
+	background-color: #e5e5e5;
+}
+
+@media only screen and (min-width: 600px){
+	#side {
+		width: 35%;
+		float: left;
+		text-align: center;
+		background-color: #e5e5e5;
+		height: 75%;
+		font-size:120%;
+	} 
+	#glavniSadrzaj {
+		background-color: #a7beff;
+		width: 65%;
+		float: right;
+		height: 75%;
+		position: relative;
+	}
+
+	#text{
+		margin-top:4%;
+		margin-bottom: 4%;
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    #side {
+		text-align: center;
+		background-color: #e5e5e5;
+		height:25%;
+		font-size: 120%;
+	}
+	#text{
+		margin-bottom:2%;
+	}
+	#glavniSadrzaj {
+		background-color: #a7beff;
+		position: relative;
+		height:50%;
+	}	
+}

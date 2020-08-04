@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD> 
+		<TITLE>Commiti</TITLE>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="committabela.js" type="text/javascript"></script>
+	</HEAD>
+ 
+<BODY>
+	<div id="mojDiv">
+	</div>
+	<script>
+		var mojDiv=document.getElementById("mojDiv");
+		var tabela = new CommitTabela(mojDiv,4);
+		tabela.dodajCommit(1,"");
+		tabela.dodajCommit(1,"");
+		tabela.dodajCommit(2,"");
+	</script>
+</BODY>
+</HTML>

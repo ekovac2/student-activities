@@ -1,0 +1,56 @@
+.prva{
+    font-size: 108%;
+    margin-top:1%;
+    text-align: center;
+}
+.druga{
+    margin-left: 15%;
+    font-size: 101%;
+}
+select,input,button{
+    width:40%;
+    margin-bottom: 1%;
+}
+button[type="submit"]{
+    float:right;
+    margin-right:10%;
+}   
+#fMasovni{
+    margin: 0 auto;
+    background-color: #d6d5d5; 
+    height: 70%;
+    width: 80%;
+    box-shadow: 1px 1px grey; 
+    
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: 5%; left: 0; bottom: 0; right: 0;  
+}
+#glavniSadrzaj {
+    clear:left;
+    background-color: #e5e5e5; 
+    margin: auto;
+    position: relative;
+}
+
+#ispis, #ispis2{
+    color:red;
+    font-size: 90%;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px){
+    #glavniSadrzaj {
+        width:85%;
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #glavniSadrzaj {
+        width:100%;
+        height: 80%;
+    }
+}

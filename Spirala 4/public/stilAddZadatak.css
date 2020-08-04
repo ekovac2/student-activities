@@ -1,0 +1,79 @@
+#glavniSadrzaj {
+    width:85%;
+    height: 75%;
+    clear:left;
+    background-color: #e5e5e5; 
+    
+    margin: auto;
+    position: relative;
+}
+#noviZadatak {
+    background-color: #d6d5d5; 
+    height: 80%;
+    width: 80%;
+    box-shadow: 1px 1px grey;
+    
+
+    position: absolute;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#drugi {
+    margin-left: 10%;
+    font-size: 105%;
+}
+#zadatak{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 130%;
+    text-align: center;
+}
+input[type="text"]{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width:50%;
+}
+input[type="file"]{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+button{
+    font-size: 101%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+select{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+button[type="submit"]{
+    float: right;
+    margin-right:10%;
+    width: 50%;
+}
+
+#ispis{
+    color: red;
+    font-size: 90%;
+    float: right;
+    margin-right: 10%;
+    
+}
+
+@media only screen and (min-width: 600px){
+    #glavniSadrzaj {
+        width:85%;
+        height: 75%;
+    }  
+}
+
+@media only screen and (max-width: 600px){
+    #glavniSadrzaj {
+        width:100%;
+        height: 70%;
+    }
+}

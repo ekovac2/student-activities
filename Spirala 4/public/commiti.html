@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD> 
+		<TITLE>Commiti</TITLE>
+		<link rel="stylesheet" type="text/css" href="stilCommiti.css">
+		<link rel="stylesheet" type="text/css" href="headerIfooter.css">
+		<script src="committabela.js" type="text/javascript"></script>
+		<script src="commiti.js" type="text/javascript"></script>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</HEAD>
+
+<BODY>
+	<div id="header">
+		<div id="logo">
+			<img src="slikica.png" alt="slika">
+		</div>
+
+		<div id="naziv">
+			Pregled commita 
+		</div>
+
+        
+		<div id="meni">
+			<ul>
+				<li><a href="zadaci.html">Pregled godina</a></li>
+				<li><a href="addGodina.html">Dodavanje godine</a></li>
+				<li><a href="studenti.html">Pregled studenata</a></li>
+				<li><a href="commiti.html">Pregled commita</a></li>
+				<li><a href="addZadatak.html">Dodavanje zadataka</a></li>
+				<li><a href="addVjezba.html">Pregled vježbe/spirale</a></li>
+				<li><a href="addStudent.html">Dodavanje studenata</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="glavniDio">
+
+		<p>Student: Neko Nekić, 1234<br></p>
+		<p>Naziv vježbe/spirale: Vježba 1<br></p>
+		<p>Repozitorij: <a href="#">Hyperlink</a><br></p>
+
+		<!--
+		<table id="commiti">
+			<tr id="prvi">
+				<td>Naziv zadatka</td>
+				<td colspan="8">Comitti</td>
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 1</a></td>
+				<td><a href="https://bitbucket.org/homepage/">1</a></td>
+				<td><a href="https://bitbucket.org/homepage/">2</a></td>
+				<td><a href="https://bitbucket.org/homepage/">3</a></td>
+				<td><a href="https://bitbucket.org/homepage/">4</a></td>
+				<td><a href="https://bitbucket.org/homepage/">5</a></td>
+				<td><a href="https://bitbucket.org/homepage/">6</a></td>
+				<td><a href="https://bitbucket.org/homepage/">7</a></td>
+				<td><a href="https://bitbucket.org/homepage/">8</a></td>
+				
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 2</a></td>
+				<td><a href="https://bitbucket.org/homepage/">1</a></td>
+				<td><a href="https://bitbucket.org/homepage/">2</a></td>
+				<td><a href="https://bitbucket.org/homepage/">3</a></td>
+				<td><a href="https://bitbucket.org/homepage/">4</a></td>
+				<td colspan="4"></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 3</a></td>
+				<td colspan="8"></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 4</a></td>
+				<td colspan="8"></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 5</a></td>
+				<td colspan="8"></td>
+			</tr>
+
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 6</a></td>
+				<td colspan="8"></td>
+			</tr>
+			<tr>
+				<td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 7</a></td>
+				<td colspan="8"></td>
+			</tr>
+
+		</table>
+-->
+		<form action="#" onsubmit="return Kreiraj()">
+			Broj zadataka: 
+			<input type="number" id="brojRedova" required> 
+			<button type="submit">Kreiraj tabelu</button><br>
+		</form>
+
+		<form action="#" onsubmit="return DodajCom()">
+			Redni broj zadatka: 
+			<input type="number" id="redniBr" required>
+			  URL: 
+			<input type="text" id="urlic" required> 
+			<button type="submit">Dodaj commit</button><br>
+		</form>
+
+		<form action="#" onsubmit="return EditujCom()">
+			Redni broj zadatka: 
+			<input type="number" id="redniBrZ" required>
+			Redni broj commita:
+			<input type="number" id="redniBrC" required>
+			URL: 
+			<input type="text" id="urlic2" required> 
+			<button type="submit">Edituj commit</button><br>
+		</form>
+
+		<form action="#" onsubmit="return ObrisiCom()">
+			Redni broj zadatka: 
+			<input type="number" id="redniBrZZ" required>
+			Redni broj commita:
+			<input type="number" id="redniBrCC" required>
+			<button type="submit">Obriši commit</button><br>
+
+		</form>
+		<div id="mojDiv">
+		</div>
+
+</div>
+
+	<div id="footer">
+	Web tehnologije 2018/19
+	</div>
+
+</BODY>
+</HTML>

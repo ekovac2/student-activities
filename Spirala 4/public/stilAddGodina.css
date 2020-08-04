@@ -1,0 +1,78 @@
+.druga{
+    margin-left: 15%;
+    font-size: 101%;
+}
+
+input{
+    margin-top: 1%;
+    margin-bottom: 2%; 
+    width:80%;
+ }
+
+.godina{
+    font-size: 108%;
+    margin-top: 5%;
+    text-align: center;
+}
+button{
+    width:40%;
+    margin-bottom: 1%;
+}
+.item{
+    margin-left:5%;
+    margin-top: 4%;
+    background-color: #e5e5e5;
+    display: inline-table;
+    width:37%; 
+    height:37%;
+    text-align: center;
+}
+#ispis{
+    color:red;
+    font-size: 90%;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px){    
+    #glavniSadrzaj {
+        float: right;
+        width:65%;
+        height: 75%;
+        background-color: #a7beff;
+    }
+    #side{
+        background-color: #e5e5e5;
+        float: left;
+        width:35%;
+        height: 75%;
+    }
+    .prva{ 
+        font-size: 108%;
+        margin-top: 5%;
+        text-align: center;
+    }
+   
+    button{
+        margin-top:10%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #glavniSadrzaj {
+        width:100%;
+        height: 52%;
+        background-color: #a7beff;
+    }
+
+    #side{
+        background-color: #e5e5e5;
+        width:100%;
+        height: 35%;
+    }
+    .prva{
+        font-size: 108%;
+        text-align: center;
+    }
+}

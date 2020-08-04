@@ -1,0 +1,10 @@
+html
+   body
+       p Greška
+       p #{pokusaj.poruka}
+       form()
+           input(type="button",value="Back", onclick = "vratiNaPrethodnu()")
+           script.
+            function vratiNaPrethodnu(){
+                window.history.back();
+            }
